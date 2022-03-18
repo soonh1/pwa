@@ -43,14 +43,13 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ## How to run the app
 1. Either a git client or downlaod the app and open the folder in the cli
 2. Install all dependencies using the `npm install` command
-3. Start the web server using the `npm run dev` command. The app will be served at http://localhost:3000/
-4. Go to http://localhost:3000/ and get started
+3. Start the web server using the `npm run dev` command. The app will be served at http://localhost:8080/
+4. Go to http://localhost:8080/ and get started
 
 ## How to use the PWA - PWA - Langeland kommune
 The app is pretty simple. You login depending on your which department you work at and then find a specific user by search or through filter.
-1. The shortcutPanel is placed on right side and gives an overview of all the shortcuts included in the RTE, and can be applied to text
-2. The blockMenu is accessed by using the command ctrl + k, and the purpose of this is to build building blocks.
-3. The hoverMenu is accessed when selecting / highlighting some text for styling, and includes the typical features on a RTE.
+1. Login.
+2. Choose a categori or find a specific user through search.
 
 ## Features
 
@@ -100,14 +99,17 @@ export const searchCommands = (
 5. Collaborative editing
 
 ## How to Contribute
-1. Clone repo and create a new branch $ git checkout http:com/Tjimbaa/WebDev-RTE -b name for new branch
+1. Clone repo and create a new branch $ git checkout https://github.com/soonh1/pwa-ba.git -b name for new branch
 2. Make changes and test
 3. Sumbit Pull Request with comprehensive description of changes
 
-## Why Use This RTE?
-This RTE is easy to implement, and easy to install
-* Takes a few seconds to setup
-* Can be implemented with and without a framework
+## Why should Langeland kommune use this app?
+The basic idea is to digitize physical information cards for a mobile application,
+in which the access to this information becomes easily accessible to, for example, nurses and
+social and health workers.
+
+* Should ease the workflow for health workers.
+* Provides an overview.
 * Intuitive to work with. 
 
 ## What the prototype looks like
