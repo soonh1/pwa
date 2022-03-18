@@ -34,7 +34,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Table of Contents
 * How to run the app
-* How to use the RTE
+* How to use the PWA - app
 * Features
 * Future Features
 * How to contribute
@@ -46,8 +46,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 3. Start the web server using the `npm run dev` command. The app will be served at http://localhost:3000/
 4. Go to http://localhost:3000/ and get started
 
-## How to use the RTE
-There are three main UI components consisting of shortcutPanel, blockMenu, hoverMenu and input searching.
+## How to use the PWA - app
+The app is pretty simple. You login depending on your which department you work at and then find a specific user by search or through filter.
 1. The shortcutPanel is placed on right side and gives an overview of all the shortcuts included in the RTE, and can be applied to text
 2. The blockMenu is accessed by using the command ctrl + k, and the purpose of this is to build building blocks.
 3. The hoverMenu is accessed when selecting / highlighting some text for styling, and includes the typical features on a RTE.
