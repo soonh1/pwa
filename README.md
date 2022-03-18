@@ -63,13 +63,14 @@ export default {
 ### Filter function
 ```
 computed: {
-    filterCountriesBycCategory: function() {
-      return this.countries.filter(
+    test: function () {
+      return this.RandomUser.filter(
         (item) =>
-          !item.region.indexOf(this.countriesCategory) &&
-          !item.name.toLowerCase().indexOf(this.name.toLowerCase())
+          !item.gender.indexOf(this.gender) &&
+          !item.username.indexOf(this.username)
       );
     },
+  },
 ```
 
 ## Future Features
