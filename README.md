@@ -23,11 +23,11 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-# WebDev-RTE
+# PWA - Langeland kommune
 
 
-<h5 align="center"><img width="300" src="https://github.com/Tjimbaa/mockjson/blob/main/umbraco_logo_white_1.png" alt="Umbraco logo">
-  <p>This is a WYSIGYG Rich Text Editor built for Umbraco</p>
+<h5 align="center"><img width="300" src="https://langelandkommune.dk/Files/Images/Langeland.svg" alt="logo">
+  <p>This is a Progress webapplication build for LangeLand kommune</p>
 </h5>
 
 
@@ -46,7 +46,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 3. Start the web server using the `npm run dev` command. The app will be served at http://localhost:3000/
 4. Go to http://localhost:3000/ and get started
 
-## How to use the PWA - app
+## How to use the PWA - PWA - Langeland kommune
 The app is pretty simple. You login depending on your which department you work at and then find a specific user by search or through filter.
 1. The shortcutPanel is placed on right side and gives an overview of all the shortcuts included in the RTE, and can be applied to text
 2. The blockMenu is accessed by using the command ctrl + k, and the purpose of this is to build building blocks.
