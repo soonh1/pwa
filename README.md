@@ -94,7 +94,7 @@ export const searchCommands = (
 ## Future Features
 1. Documentation
 2. Test
-3. Customization
+3. Customization - templates
 4. Table of Contents
 5. Collaborative editing
 
@@ -113,5 +113,5 @@ social and health workers.
 * Intuitive to work with. 
 
 ## What the prototype looks like
-![Prototype image](https://github.com/Tjimbaa/mockjson/blob/main/rte.png)
+![Prototype image](https://github.com/soonh1/pwa-ba/blob/main/src/assets/prototype-pwa.PNG)
 
