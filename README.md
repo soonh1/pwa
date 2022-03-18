@@ -53,17 +53,35 @@ The app is pretty simple. You login depending on your which department you work 
 
 ## Features
 
-### getCommands
+### Search function
 ```
-export interface EditorCommand {
-  name: string;
-  description: string;
-  aliases: string[];
-  keyboardShortcut: string[]
-  command(): void
-  icon: string;
-  tags: string[];
-}
+<script>
+import axios from "axios";
+export default {
+  data() {
+    return {
+      RandomUser: [],
+      name: "",
+      username: "",
+    };
+  },
+  computed: {
+    test: function () {
+      return this.RandomUser.filter(
+        (item) => !item.username.indexOf(this.username)
+      );
+    },
+  },
+  created() {
+    axios
+      .get("https://random-data-api.com/api/users/random_user?size=7")
+      .then((response) => {
+        this.RandomUser = response.data;
+      })
+      .catch((err) => console.log(err));
+  },
+};
+</script>
 ``` 
 
 **aliases** is a list of alternative names to commands, which makes the searching better. For example can bold have the alias heavy, when doing a search for heavy bold will appear.
@@ -74,21 +92,16 @@ export interface EditorCommand {
 
 **tags** is used to filter a list of **commands** based on which menu should display them.
 
-### searchCommands
+### Filter function
 ```
-export const searchCommands = (
-  search: string,
-  tag?: string
-): EditorCommand[] => {
-  const filtered = getCommands().filter(
-    x =>
-      (x.name.toLocaleLowerCase().includes(search) ||
-        x.aliases.some(y => y.includes(search))) &&
-      (tag ? x.tags.some(z => z.includes(tag)) : true)
-  );
-
-  return filtered;
-};
+computed: {
+    filterCountriesBycCategory: function() {
+      return this.countries.filter(
+        (item) =>
+          !item.region.indexOf(this.countriesCategory) &&
+          !item.name.toLowerCase().indexOf(this.name.toLowerCase())
+      );
+    },
 ```
 
 ## Future Features
